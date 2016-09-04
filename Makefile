@@ -1,2 +1,2 @@
 all:
-	lualatex beamersample.tex
+	lualatex template.tex

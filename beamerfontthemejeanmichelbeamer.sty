@@ -1,9 +1,24 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{beamerfontthemejeanmichelbeamer}[2016/08/12 Le beamer qui est plus beau que ta maman]
 
-\usepackage[quiet]{fontspec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setmainfont{Roboto-Light}[
+\usepackage{fontspec}
+
+%\setmainfont{HapnaSlabSerif}[
+    %Mapping=tex-text,
+    %Path=fonts/hapnaslab/,
+    %BoldFont=HapnaSlabSerifDemiBold,
+    %Extension=.ttf
+%]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Font declarations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setsansfont{Roboto-Light}[
     Mapping=tex-text,
     Path=fonts/roboto/,
     BoldFont=Roboto-Regular,
@@ -17,3 +32,29 @@
     BoldFont=HapnaSlabSerifDemiBold,
     Extension=.ttf
 ]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Font settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamerfont{title}                       { family=\headerfont, series=\bfseries, size=\Large}
+\setbeamerfont{subtitle}                    { family=\headerfont, series=\bfseries, size=\large}
+\setbeamerfont{frametitle}                  { family=\headerfont, series=\bfseries}
+\setbeamerfont{author}                      { size=\small}
+\setbeamerfont{date}                        { size=\small}
+\setbeamerfont{institute}                   { size=\small}
+\setbeamerfont{section in toc}              { series=\bfseries }
+\setbeamerfont{alerted text}                { series=\bfseries }
+\setbeamerfont{section title}               { size=\Large, series=\bfseries}
+\setbeamerfont{block title}                 { size=\normalsize, series=\bfseries}
+\setbeamerfont{block title alerted}         { size=\normalsize, series=\bfseries}
+\setbeamerfont{subtitle}                    { size=\large}
+\setbeamerfont{frametitle}                  { size=\large, series=\bfseries}
+\setbeamerfont{caption}                     { size=\small}
+\setbeamerfont{caption name}                { series=\bfseries}
+\setbeamerfont{description item}            { series=\bfseries}
+\setbeamerfont{page number in head/foot}    { size=\scriptsize}
+\setbeamerfont{bibliography entry author}   { size=\normalsize, series=\normalfont}
+\setbeamerfont{bibliography entry title}    { size=\normalsize, series=\bfseries}
+\setbeamerfont{bibliography entry location} { size=\normalsize, series=\normalfont}
+\setbeamerfont{bibliography entry note}     { size=\small, series=\normalfont}

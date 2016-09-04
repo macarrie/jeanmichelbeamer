@@ -1,0 +1,66 @@
+\documentclass[10pt]{beamer}
+
+%\usetheme[progressbar=frametitle]{metropolis}
+\usetheme{jeanmichelbeamer}
+
+\title{Beamer template}
+\subtitle{Basic theme}
+\date{\today}
+\author{Mathieu Carrié}
+\institute{Prout}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}[plain]{Table of contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Usage}
+
+\begin{frame}[fragile]{Usage}
+    JeanMichel Beamer is a simple theme.
+    Use the theme as any other beamer theme:
+
+    \begin{verbatim} \usetheme{jeanmichelbeamer} \end{verbatim}
+
+    The theme can also be used as selectively: \texttt{outer}, \texttt{inner}, \texttt{color} and \texttt{font} themes are separated.
+    This theme is a very minimalist one inspired from Metropolis.
+\end{frame}
+
+\begin{frame}{Dependencies}
+    \begin{itemize}
+        \item XeTeX or LuaTex for font related issues
+        \item Regular packages included in most TeX distributions
+    \end{itemize}
+\end{frame}
+
+\section{Features}
+
+\begin{frame}{Sections frames}
+    Section frames are created to ease transitions between sections. Note that a progressbar is displayed on these frames and at the bottom of regular ones.
+\end{frame}
+
+\begin{standout}
+    Simple standout frames
+\end{standout}
+
+\section{Other section}
+
+\begin{frame}{Special blocks}
+  \begin{block}{Default}
+    Block content.
+  \end{block}
+
+  \begin{alertblock}{Alert}
+    Block content.
+  \end{alertblock}
+
+  \begin{exampleblock}{Example}
+    Block content.
+  \end{exampleblock}
+\end{frame}
+
+\end{document}

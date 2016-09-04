@@ -1,2 +1,27 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{beamerouterthemejeanmichelbeamer}[2016/08/12 Le beamer qui est plus beau que ta maman]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Standout frame type
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{standout}{
+    \setbeamercolor{background canvas}{
+        bg=darkblue
+    }
+
+    \color{white}\headerfont\bfseries\Large
+    \begin{frame}[plain]
+        \centering
+}{
+    \end{frame}
+}
+
+\AtBeginSection[]{
+    \begin{frame}[plain]
+        \usebeamerfont{title}\bfseries\Large
+        \centering
+        \insertsection
+        \progressbar
+    \end{frame}
+}

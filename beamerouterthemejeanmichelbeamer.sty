@@ -25,3 +25,19 @@
         \progressbar
     \end{frame}
 }
+
+\AtBeginSubsection[]{
+    \begin{frame}[plain]
+        \usebeamerfont{title}
+        \centering
+        {
+            \bfseries\Large
+            \insertsection
+        }
+        \progressbar
+        {
+            \large
+            \insertsubsection
+        }
+    \end{frame}
+}
